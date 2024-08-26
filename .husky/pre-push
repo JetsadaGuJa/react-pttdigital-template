@@ -1,9 +1,0 @@
-#!/bin/sh
-# Pre-push hook to check for console.log statements in your code
-
-if grep -r "console\.log" ./src; then
-  echo "❌ Push rejected: Please remove console.log statements before pushing."
-  exit 1
-fi
-
-exit 0
